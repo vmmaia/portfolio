@@ -1,0 +1,140 @@
+{
+    "work": [
+        {
+            "company": "Broadvoice",
+            "position": "Software Engineer",
+            "startDate": "May 2021",
+            "endDate": "present",
+            "city": "Aveiro",
+            "country": "Portugal",
+            "regime": "Full remote",
+            "description": "Involvement in the development of GoContact, a cloud-based contact center platform covering not only the service layer, integrating all the communication channels (voice, E-Mail, and social networks), but also the communication layer.",
+            "techStack": [
+                "AngularJS",
+                "CSS3",
+                "Docker",
+                "ExpressJS",
+                "HTML5",
+                "jQuery",
+                "NodeJS",
+                "PHP",
+                "PostgreSQL",
+                "ReactJS",
+                "Redis",
+                "Typescript",
+                "Vanilla JS"
+            ]
+        },
+        {
+            "company": "Startup R&D / Freelance",
+            "position": "Software Engineer",
+            "startDate": "August 2018",
+            "endDate": "June 2021",
+            "city": "Aveiro",
+            "country": "Portugal",
+            "regime": "Full remote",
+            "description": "Development of an enterprise resource planner (ERP) aimed at schools built on a microservices-oriented architecture ready for cloud deployment and horizontal scalability. The main feature of this platform is automatic test grading by taking advantage of computational vision techniques and machine learning.",
+            "techStack": [
+                "CSS3",
+                "Docker",
+                "ExpressJS",
+                "HTML5",
+                "NodeJS",
+                "OpenCV",
+                "PostgreSQL",
+                "Python",
+                "ReactJS",
+                "Redis",
+                "Typescript",
+                "WebRTC"
+            ]
+        },
+        {
+            "company": "IT - Instituto de Telecomunicações",
+            "position": "Research Fellow - BIIC Nº 896/2017",
+            "startDate": "June 2017",
+            "endDate": "June 2018",
+            "city": "Aveiro",
+            "country": "Portugal",
+            "regime": "On site",
+            "description": "Contributed to the development of a PKI for vehicular communications allowing for transnational corridors as part of the project PASMO - Open platform for the development and experimentation of mobility solutions.",
+            "techStack": ["ASN.1", "C", "OpenSSL"]
+        }
+    ],
+    "education": [
+        {
+            "university": "University of Aveiro",
+            "degree": "MSc",
+            "name": "Informatics Engineering",
+            "startDate": "October 2018",
+            "endDate": "June 2020",
+            "subjects": [
+                "Advanced Algorithms",
+                "Distributed Systems",
+                "Large Scale Computation",
+                "Software Architectures"
+            ]
+        },
+        {
+            "university": "Águeda School of Technology and Management – University of Aveiro",
+            "degree": "BSc",
+            "name": "Information Technologies",
+            "startDate": "September 2015",
+            "endDate": "August 2018",
+            "subjects": [
+                "Elements of Computer Architecture",
+                "Networking Technologies",
+                "Object Oriented Programming",
+                "Software Engineering"
+            ]
+        }
+    ],
+    "portfolio": [
+        {
+            "name": "Markov chain generator",
+            "description": "A Markov Chain Text Generator is a program that uses a statistical model called a Markov chain to generate new text that is similar in style to a set of sample text. The Markov chain algorithm works by analyzing the frequency of words and phrases in the sample text, and then using that data to construct new sentences that are similar in structure and meaning.",
+            "techStack": ["CSS3", "HTML5", "Javascript"],
+            "date": "February 2023",
+            "repo": "https://github.com/vmmaia/markov_chain_generator"
+        },
+        {
+            "name": "Media stream server",
+            "description": "Proof of concept of a server that streams a video file in chunks, which allows the client to start playing the video before the entire file has been downloaded.",
+            "techStack": ["CSS3", "ExpressJS", "HTML5", "NodeJS"],
+            "date": "February 2023",
+            "repo": "https://github.com/vmmaia/media_streaming"
+        },
+        {
+            "name": "Raycasting",
+            "description": "Proof of concept of a raycaster implemented in Javascript.",
+            "techStack": ["CSS3", "HTML5", "Javascript"],
+            "date": "November 2022",
+            "repo": "https://github.com/vmmaia/Raycasting",
+            "live": "https://vmmaia.github.io/Raycasting/"
+        },
+        {
+            "name": "Perlin noise",
+            "description": "Proof of concept of 1D and 2D perlin noise generatos implemented in Javascript.",
+            "techStack": ["CSS3", "HTML5", "Javascript"],
+            "date": "November 2022",
+            "repo": "https://github.com/vmmaia/PerlinNoise",
+            "live": "https://vmmaia.github.io/PerlinNoise/"
+        },
+        {
+            "name": "Book searcher",
+            "description": "Project that puts into practise the acquired knowledge of current web technnologies across the development stack (front-end, back-end and devOps). Implements JWT authentication and queries a third party API for information.",
+            "techStack": [
+                "Docker",
+                "ExpressJS",
+                "JWT",
+                "Kubernetes",
+                "MongoDB",
+                "NodeJS",
+                "ReactJS",
+                "Typescript"
+            ],
+            "date": "November 2022",
+            "repo": "https://github.com/vmmaia/BookSearcher"
+        }
+    ]
+}
