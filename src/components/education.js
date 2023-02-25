@@ -4,7 +4,7 @@ import { Typography, Tag } from 'antd';
 const Education = (props) => {
     return (
         <div>
-            <Typography.Text strong style={{ fontSize: '1.25rem' }}>
+            <Typography.Text strong style={{ fontSize: '1.5rem' }}>
                 {`${props.education.degree} in ${props.education.name}`}
             </Typography.Text>
             <Typography.Text

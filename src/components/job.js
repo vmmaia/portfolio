@@ -4,7 +4,7 @@ import { Tag, Typography } from 'antd';
 const Job = (props) => {
     return (
         <div>
-            <Typography.Text strong style={{ fontSize: '1.25rem' }}>
+            <Typography.Text strong style={{ fontSize: '1.5rem' }}>
                 {`${props.job.company}`}
             </Typography.Text>
             <Typography.Text

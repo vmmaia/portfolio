@@ -61,6 +61,60 @@
             "techStack": ["ASN.1", "C", "OpenSSL"]
         }
     ],
+    "skills": {
+        "technical": [
+            {
+                "label": "NodeJS",
+                "percentage": 80
+            },
+            {
+                "label": "ReactJS",
+                "percentage": 80
+            },
+            {
+                "label": "SQL",
+                "percentage": 65
+            },
+            {
+                "label": "HTML",
+                "percentage": 85
+            },
+            {
+                "label": "CSS",
+                "percentage": 85
+            },
+            {
+                "label": "Git",
+                "percentage": 80
+            }
+        ],
+        "soft": [
+            {
+                "label": "Teamwork",
+                "percentage": 75
+            },
+            {
+                "label": "Communication",
+                "percentage": 65
+            },
+            {
+                "label": "Flexibility",
+                "percentage": 95
+            },
+            {
+                "label": "Attention to detail",
+                "percentage": 85
+            },
+            {
+                "label": "Conflict resolution",
+                "percentage": 90
+            },
+            {
+                "label": "Positive attitude",
+                "percentage": 90
+            }
+        ]
+    },
     "education": [
         {
             "university": "University of Aveiro",

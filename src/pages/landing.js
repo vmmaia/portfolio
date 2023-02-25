@@ -11,11 +11,13 @@ import {
     Input,
     message,
     Button,
+    Progress,
 } from 'antd';
 import {
     LinkedinOutlined,
     GithubOutlined,
     CopyOutlined,
+    MailOutlined,
 } from '@ant-design/icons';
 
 import Job from '../components/job';
@@ -24,6 +26,8 @@ import Education from '../components/education';
 import MyLife from '../life.json';
 import DescriptionsItem from 'antd/es/descriptions/Item';
 import PortfolioItem from '../components/portfolioItem';
+
+import profileImg from '../assets/profile.jpg';
 
 const email = 'vasco.matos.maia@gmail.com';
 
@@ -48,7 +52,7 @@ const LandingPage = () => {
                 <Card>
                     <Row justify={'center'}>
                         <Col span={24} style={{ textAlign: 'center' }}>
-                            <Avatar src="/assets/profile.jpg" size={200} />
+                            <Avatar src={profileImg} size={200} />
                         </Col>
                         <Col style={{ textAlign: 'center' }}>
                             <Typography.Title
@@ -92,13 +96,19 @@ const LandingPage = () => {
                                         />
                                     </a>
                                 </Col>
+                                <Col>
+                                    <a
+                                        href={`mailto:${email}`}
+                                        style={{ color: 'white' }}
+                                    >
+                                        <MailOutlined
+                                            style={{ fontSize: '2rem' }}
+                                        />
+                                    </a>
+                                </Col>
                             </Row>
                             <Row>
                                 <Col span={24} style={{ textAlign: 'center' }}>
-                                    <Typography.Text strong>
-                                        You can also reach me at:
-                                    </Typography.Text>
-                                    <br />
                                     <Input.Group compact>
                                         <Input
                                             style={{
@@ -145,6 +155,30 @@ const LandingPage = () => {
                             </Descriptions>
                         </Col>
                     </Row>
+                    <Divider orientation="left">Technical skills</Divider>
+                    <Row gutter={[24, 0]}>
+                        {MyLife.skills.technical.map((skill, idx) => (
+                            <Col key={idx} span={8}>
+                                <Typography.Text>{skill.label}</Typography.Text>
+                                <Progress
+                                    percent={skill.percentage}
+                                    showInfo={false}
+                                />
+                            </Col>
+                        ))}
+                    </Row>
+                    <Divider orientation="left">Soft skills</Divider>
+                    <Row gutter={[24, 24]}>
+                        {MyLife.skills.soft.map((skill, idx) => (
+                            <Col key={idx} span={12}>
+                                <Typography.Text>{skill.label}</Typography.Text>
+                                <Progress
+                                    percent={skill.percentage}
+                                    showInfo={false}
+                                />
+                            </Col>
+                        ))}
+                    </Row>
                 </Card>
             </Col>
             <Col xs={24} xl={12}>
@@ -160,26 +194,36 @@ const LandingPage = () => {
                                 Portugal.
                             </Typography.Paragraph>
                             <Typography.Paragraph>
-                                With over{' '}
-                                {calculateYears(new Date('2017-07-01'))} years
+                                With over
+                                <b>
+                                    {' '}
+                                    {calculateYears(
+                                        new Date('2017-07-01')
+                                    )}{' '}
+                                    years{' '}
+                                </b>
                                 of experience in the tech industry, Vasco has
                                 become a skilled programmer with expertise in
                                 various programming languages and frameworks. He
-                                has a background in full-stack web development
-                                and is proficient in creating and maintaining
-                                complex web applications.
+                                has a background in{' '}
+                                <b>full-stack web development</b> and is
+                                proficient in creating and maintaining complex{' '}
+                                <b>web applications</b>.
                             </Typography.Paragraph>
                             <Typography.Paragraph>
                                 In addition to his professional work, Vasco is
-                                an avid learner who is always seeking to expand
-                                his knowledge and skills. He enjoys reading
-                                about the latest trends and advancements in the
+                                an avid <b>learner</b> who is always seeking to
+                                expand his knowledge and skills. He enjoys
+                                reading about the{' '}
+                                <b>latest trends and advancements</b> in the
                                 tech industry and participating in online
                                 communities.
                             </Typography.Paragraph>
                         </Col>
                     </Row>
-                    <Divider orientation="left">Professional path</Divider>
+                    <Divider orientation="left">
+                        Professional experience
+                    </Divider>
                     <Row justify={'center'}>
                         <Col xs={24} xl={18}>
                             <Timeline
@@ -190,7 +234,7 @@ const LandingPage = () => {
                             />
                         </Col>
                     </Row>
-                    <Divider orientation="left">Education</Divider>
+                    <Divider orientation="left">Academic path</Divider>
                     <Row justify={'center'}>
                         <Col xs={24} xl={18}>
                             <Timeline

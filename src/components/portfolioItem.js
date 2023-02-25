@@ -4,7 +4,7 @@ import { GithubOutlined, GlobalOutlined } from '@ant-design/icons';
 
 const PortfolioItem = (props) => {
     return (
-        <Col xs={24} md={12} xl={8}>
+        <Col xs={24} md={12} xxl={8}>
             <Card
                 actions={[
                     <Tooltip title="Repository">

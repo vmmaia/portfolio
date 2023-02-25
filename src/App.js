@@ -23,12 +23,12 @@ const App = () => {
                     <Routes>
                         <Route
                             exact
-                            path={'/'}
+                            path={'/portfolio/'}
                             element={<LandingPage />}
                         ></Route>
                         <Route
                             path={'*'}
-                            element={<Navigate replace to="/" />}
+                            element={<Navigate replace to="/portfolio/" />}
                         ></Route>
                     </Routes>
                 </Layout.Content>
